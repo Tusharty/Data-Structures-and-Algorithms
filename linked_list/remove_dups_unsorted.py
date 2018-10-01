@@ -9,7 +9,7 @@ from linked_list import LinkedListNode
 
 
 def delete_duplicates(linked_list_node)
-  
+
     if not linked_list_node:
         return
 
@@ -24,6 +24,8 @@ def delete_duplicates(linked_list_node)
             already_found[current_node.data] = 1
             previous_node = current_node
         current_node = current_node.next
+
+    print linked_list_node
 
     return str(linked_list_node)
 
